@@ -10,6 +10,42 @@ import UIKit
 import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
+    @IBOutlet var Buttons: [UIButton]!
+    
+    var currentQuote : String = ""
+    var currentMode = "T"
+    var tt = TrumpTranslator()
+    
+    @IBAction func buttonPressed(_ sender: AnyObject) {
+        for (index, button) in Buttons.enumerated() {
+            if button.isEqual(sender) {
+                let c = button.titleLabel
+                
+                currentQuote += c?.text!
+                
+                runTranslator()
+                
+            }
+        }
+    }
+    
+    func switchMode() {
+        if (currentMode == "T") {
+            currentMode = "O"
+        } else {
+            currentMode = "T"
+        }
+    }
+    
+    func runTranslator() {
+        if (currentMode == "T") {
+            changeDisplay(s: tt.translate(humanString: currentQuote))
+        }
+    }
+    
+    func changeDisplay(s: String) {
+        print(s)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
