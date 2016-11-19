@@ -17,11 +17,11 @@ class MessagesViewController: MSMessagesAppViewController {
     var tt = TrumpTranslator()
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
-        for (index, button) in Buttons.enumerated() {
+        for (_, button) in Buttons.enumerated() {
             if button.isEqual(sender) {
                 let c = button.titleLabel
                 
-                currentQuote += c?.text!
+                currentQuote += (c?.text)!
                 
                 runTranslator()
                 
