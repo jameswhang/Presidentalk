@@ -13,6 +13,8 @@
 		3A993AC11DE00F1E00259969 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A993AC01DE00F1E00259969 /* MessagesViewController.swift */; };
 		3A993AC41DE00F1E00259969 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A993AC21DE00F1E00259969 /* MainInterface.storyboard */; };
 		3A993AC61DE00F1E00259969 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A993AC51DE00F1E00259969 /* Assets.xcassets */; };
+		3A993AD21DE0129E00259969 /* TrumpTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A993AD11DE0129E00259969 /* TrumpTranslator.swift */; };
+		3A993AD81DE02BB200259969 /* ObamaTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A993AD71DE02BB200259969 /* ObamaTranslator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3A993AC31DE00F1E00259969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		3A993AC51DE00F1E00259969 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A993AC71DE00F1E00259969 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A993AD11DE0129E00259969 /* TrumpTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrumpTranslator.swift; sourceTree = "<group>"; };
+		3A993AD71DE02BB200259969 /* ObamaTranslator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObamaTranslator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				3A993AC21DE00F1E00259969 /* MainInterface.storyboard */,
 				3A993AC51DE00F1E00259969 /* Assets.xcassets */,
 				3A993AC71DE00F1E00259969 /* Info.plist */,
+				3A993AD11DE0129E00259969 /* TrumpTranslator.swift */,
+				3A993AD71DE02BB200259969 /* ObamaTranslator.swift */,
 			);
 			path = MessagesExtension;
 			sourceTree = "<group>";
@@ -159,6 +165,7 @@
 				TargetAttributes = {
 					3A993AAD1DE00F1E00259969 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = PL75Y3DX5G;
 						ProvisioningStyle = Automatic;
 					};
 					3A993AB71DE00F1E00259969 = {
@@ -212,6 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A993AD81DE02BB200259969 /* ObamaTranslator.swift in Sources */,
+				3A993AD21DE0129E00259969 /* TrumpTranslator.swift in Sources */,
 				3A993AC11DE00F1E00259969 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,7 +371,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PL75Y3DX5G;
 				INFOPLIST_FILE = Presidentalk/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = jameswhang.Presidentalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -376,7 +385,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PL75Y3DX5G;
 				INFOPLIST_FILE = Presidentalk/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = jameswhang.Presidentalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
