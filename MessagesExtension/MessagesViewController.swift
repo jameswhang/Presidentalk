@@ -12,9 +12,11 @@ import Messages
 class MessagesViewController: MSMessagesAppViewController {
     @IBOutlet var Buttons: [UIButton]!
     
+    var currentInput : String = ""
     var currentQuote : String = ""
     var currentMode = "T"
     var tt = TrumpTranslator()
+    var ot = ObamaTranslator()
     
     @IBAction func buttonPressed(_ sender: AnyObject) {
         for (_, button) in Buttons.enumerated() {
@@ -39,7 +41,9 @@ class MessagesViewController: MSMessagesAppViewController {
     
     func runTranslator() {
         if (currentMode == "T") {
-            changeDisplay(s: tt.translate(humanString: currentQuote))
+            changeDisplay(s: tt.translate(humanString: currentInput))
+        } else {
+            changeDisplay(s: ot.translate(humanString: currentInput))
         }
     }
     
